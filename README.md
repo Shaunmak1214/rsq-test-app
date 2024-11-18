@@ -1,29 +1,63 @@
-# Create T3 App
+# Predictive Courier Maintenance
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+<p align="center">
+    <img src="https://res.cloudinary.com/shaun-storage/image/upload/v1731973368/Image_19-11-2024_at_7.37_AM_cxc0xl.jpg">
+    <img src="https://res.cloudinary.com/shaun-storage/image/upload/v1731973367/Image_19-11-2024_at_7.37_AM_1_kdl4fz.jpg">
+</p>
 
-## What's next? How do I make an app with this?
+## Quick Start
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+#### Clone the repo
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+`git clone https://github.com/Shaunmak1214/rsq-test-app.git`
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+#### Install necessary dependencies
 
-## Learn More
+`yarn install`
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+#### Check environment variables
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- Make sure the API_URL is set correctly either to your local `localhost:port/v1/` or some tunnelled urls.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+`vim .env`
 
-## How do I deploy this?
+#### Start nextjs server
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+`yarn run dev`
+
+#### Setup backend service
+
+View guide [here](https://github.com/Shaunmak1214/rsq-test-api#readme)
+
+## Feature Highlights
+
+1. Shipments Listings (Filters and Sorting)
+2. Maintenance Listings (Filters and Sorting)
+3. Maintenance Schedule Form
+4. Cancellation of shipments and maintenance
+
+## Demo Video
+
+1. Basic Flow
+   https://res.cloudinary.com/shaun-storage/video/upload/v1731973369/Screen_Recording_2024-11-19_at_7.20.49_AM_kuxsmc.mp4
+
+<br></br>
+
+<div style="height: 2px; width: 100%; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));></div>
+
+<br></br>
+
+#### Thoughts
+
+##### Justifying decisions made <b> (Vehicle Listings -> Shipment Listings)</b>
+
+- More convenient to track health status deterioration real-time of vehicles
+- Requirements mentioned predictive maintenance
+- With a direct view of shipments, future applications can be built for eg - automatically scheduling maintenance on the road, reminders for drivers to check the status of vehicles, etc.
+
+##### Enhancements in the future
+
+1. Implement Authentication
+2. More efficient api calls (pagination, caching, etc)
+3. Offline first
+4. Faster page loads with caching
