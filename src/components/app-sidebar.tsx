@@ -20,14 +20,9 @@ import { ChevronUp, Truck, User2, Wrench } from "lucide-react";
 export function AppSidebar() {
   const items = [
     {
-      title: "Vehicles",
-      url: "/vehicles",
+      title: "Dashboard",
+      url: "/dashboard",
       icon: Truck,
-    },
-    {
-      title: "Maintenance",
-      url: "/maintenance",
-      icon: Wrench,
     },
   ];
 
